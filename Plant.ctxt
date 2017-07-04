@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Plant
-comment1.params=attackSpeed\ hp\ cost\ type
-comment1.target=Plant(int,\ int,\ int,\ java.lang.String)
+comment1.params=
+comment1.target=Plant()
 comment2.params=
 comment2.target=void\ act()
 comment3.params=

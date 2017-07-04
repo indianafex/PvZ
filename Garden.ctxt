@@ -6,4 +6,6 @@ comment2.params=
 comment2.target=void\ act()
 comment3.params=
 comment3.target=void\ fall()
-numComments=4
+comment4.params=Sun
+comment4.target=void\ changeSun(int)
+numComments=5
