@@ -1,4 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.List;
 
 /**
  * Write a description of class Zombie here.
@@ -30,8 +31,15 @@ public class Zombie extends Actor
     
     public void s()
     {
-      if(getObjectsInRange(40)=1)
-      { this.hp=hp-1;
-        }
+      List<Projectile> projectiles = getObjectsInRange(40, Projectile.class);
+      if(projectiles.size() >= 1)
+      { this.hp=hp-projectiles.size();
+         for(int i = 0; i < projectiles.size(); i++)
+         {
+             Greenfoot.getworld.removeObject(
+             
+             
+            }
+      }
     }
 }

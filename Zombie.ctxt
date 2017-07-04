@@ -1,7 +1,10 @@
 #BlueJ class context
 comment0.target=Zombie
 comment0.text=\n\ Write\ a\ description\ of\ class\ Zombie\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
-comment1.params=
-comment1.target=void\ act()
-comment1.text=\n\ Act\ -\ do\ whatever\ the\ Zombie\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
-numComments=2
+comment1.params=hp\ walkspeed\ damage
+comment1.target=Zombie(int,\ int,\ int)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ s()
+numComments=4
