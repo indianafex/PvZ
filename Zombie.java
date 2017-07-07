@@ -23,23 +23,24 @@ public class Zombie extends Actor
     
     public void act() 
     {
-      move(-6);
+      move(-walkspeed);
       if(getX()<10)
       {Greenfoot.stop();}
+      damage();
      
     } 
     
-    public void s()
+    public void damage()
     {
-      List<Projectile> projectiles = getObjectsInRange(40, Projectile.class);
+      List<Projectile> projectiles = getIntersectingObjects( Projectile.class);
       if(projectiles.size() >= 1)
-      { this.hp=hp-projectiles.size();
-         for(int i = 0; i < projectiles.size(); i++)
-         {
-             Greenfoot.getworld.removeObject(
-             
-             
-            }
+      { 
+          System.out.println("Getroffen");
+          hp-=projectiles.size();
+      removeTouching(Projectile.class);
       }
+      if(hp==0)
+      {getWorld().removeObject(this);
+        }
     }
 }
